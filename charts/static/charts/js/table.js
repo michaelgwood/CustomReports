@@ -157,8 +157,6 @@ function tableInit(ctx){
       }
       tableBody.append(row);
 
-      /* If we have layerbtns then initialise them */
-      layerBtnsInit(ctx);
 
       /* If we have popovers initialise them now */
       $('td > a.btn').popover({

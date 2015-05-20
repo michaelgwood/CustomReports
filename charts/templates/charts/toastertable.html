@@ -1,6 +1,6 @@
 
 {% load static %}
-
+{% block scripts %}
 <script src="{% static 'charts/js/table.js' %}"></script>
 <script>
   $(document).ready(function() {
@@ -20,6 +20,7 @@
     })();
   });
 </script>
+{% endblock %}
 
 <!-- filter modal -->
 <div id="filter-modal-{{table_name}}" class="modal hide fade" tabindex="-1" role="dialog" aria-hidden="false">
